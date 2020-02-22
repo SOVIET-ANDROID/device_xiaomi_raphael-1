@@ -18,7 +18,11 @@ package org.lineageos.settings.popupcamera;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.SystemClock;
 import android.os.UserHandle;
+import android.util.Log;
+
+import java.util.List;
 
 public class PopupCameraUtils {
 
@@ -26,6 +30,7 @@ public class PopupCameraUtils {
     private static final boolean DEBUG = false;
 
     public static void startService(Context context) {
-        context.startServiceAsUser(new Intent(context, PopupCameraService.class), UserHandle.CURRENT);
+        context.startServiceAsUser(new Intent(context, PopupCameraService.class),
+                UserHandle.CURRENT);
     }
 }

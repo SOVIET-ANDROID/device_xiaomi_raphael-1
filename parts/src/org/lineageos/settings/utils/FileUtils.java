@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.popupcamera;
+package org.lineageos.settings.utils;
 
 import android.util.Log;
 
@@ -62,7 +62,7 @@ public final class FileUtils {
             }
         }
 
-         return line;
+        return line;
     }
 
     /**
